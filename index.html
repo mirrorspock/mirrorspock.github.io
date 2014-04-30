@@ -14,35 +14,79 @@
     <link rel="stylesheet" type="text/css" href="kai.css" />
  
      
-    <style>
+	<style>
+	
+	/* Style for our header texts 
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;	
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	
+	/* Centered texts in each section 
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	
+	
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+	}
+	
+	/* Defining each sectino background and styles 
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/backgroundpurple.png);
+		padding: 6% 0 0 0;
+	}
+	#section2{
+		background-image: url(imgs/bg3.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg4.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
  
-    /* Sections
-    * --------------------------------------- */
-    #section0 img,
-    #section1 img{
-        margin: 20px 0 0 0;
-    }   
-    #section2 img{
-        margin: 20px 0 0 52px;  
-    }
-    #section3 img{
-        bottom: 0px;
-        position: absolute;
-        margin-left: -420px;
-    }
-    .intro p{
-        width: 50%;
-        margin: 0 auto;
-        font-size: 1.5em;
-    }
- 
-    </style>
-    <!--[if IE]>
-        <script type="text/javascript">
-        var console = { log: function() {} };
-        </script>
-        <![endif]-->
-         
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/backgroundpurple.png);
+		padding: 0 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/bg5.jpg);
+		padding: 6% 0 0 0;
+	}
+	
+	
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+		         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>    
      
@@ -88,7 +132,7 @@
                             </div>
              
                         </div>
-                        <div class="slide">
+                        <div class="slide" id="slide1">
                             <div class="intro">
                                 <img src="imgs/kollision.png" alt="simple" />
                                 <h1>Kollision</h1>
